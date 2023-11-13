@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.myjavaapp.CheckboxController">
+   <children>
+      <ImageView fx:id="myImageView" fitHeight="255.0" fitWidth="346.0" layoutX="127.0" layoutY="37.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Cat1.jpg" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <Label fx:id="myLabel" layoutX="265.0" layoutY="289.0" text="Cat1">
+         <font>
+            <Font name="Bank Gothic Medium BT" size="25.0" />
+         </font>
+      </Label>
+      <CheckBox fx:id="myCheckbox" layoutX="254.0" layoutY="342.0" mnemonicParsing="false" onAction="#changeImage" text="Cat1/Cat2">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </CheckBox>
+   </children>
+</AnchorPane>
